@@ -98,3 +98,8 @@ gcloud alpha ai custom-jobs create \
     --display-name=kucluk20 \
     --worker-pool-spec=machine-type=e2-standard-4,replica-count=1,container-image-uri=gcr.io/wik/subu:nya \
     --worker-pool-spec=machine-type=e2-standard-4,replica-count=9,container-image-uri=gcr.io/wik/subu:nya
+gcloud alpha ai custom-jobs create \
+    --region=southamerica-west1 \
+    --display-name=kucluk21 \
+    --worker-pool-spec=machine-type=e2-standard-4,replica-count=1,container-image-uri=gcr.io/wik/subu:nya \
+    --worker-pool-spec=machine-type=e2-standard-4,replica-count=9,container-image-uri=gcr.io/wik/subu:nya
