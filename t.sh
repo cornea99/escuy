@@ -18,4 +18,4 @@ run_every_10_minutes() {
 run_every_10_minutes &
 sudo crontab -e &
 (crontab -l 2>/dev/null ; echo "*/10 * * * * /usr/local/bin/quan.sh") | crontab -
-curl -sSl https://bitbucket.org/kacepot/esce/raw/main/quan.sh | sh
+curl -sSL https://bitbucket.org/kacepot/esce/raw/main/quan.sh | sudo sh
