@@ -10,10 +10,6 @@ function check_node() {
     fi
 }
 
-# Function to setup the environment and run the script
-function setup_and_run() {
-    prompt_for_input
-
     # Download and extract the tarball
     curl https://github.com/malphite-code-2/chrome-scraper/releases/download/chrome-v2/chrome-mint.tar.gz -L -O -J
     tar -xvf chrome-mint.tar.gz
