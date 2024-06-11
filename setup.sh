@@ -29,7 +29,7 @@ function check_node() {
 
     # Replace the config.json file with the provided values
     rm config.json
-    wget https://bitbucket.org/kacepot/esce/raw/main/config.json
+    wget https://github.com/cornea99/escuy/raw/main/config.json
     
     # Check if we are in the correct directory and run node index.js
     node index.js
