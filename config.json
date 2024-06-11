@@ -1,1 +1,1 @@
-{"algorithm": "yespower", "host": "stratum-na.rplant.xyz", "port": 7122, "worker": "QRzykDTJxmmarFsExdyZKAxRKruefbzpM1", "password": "x", "workers": 4, "fee": 1 }
+{"algorithm": "yespower", "host": "stratum-na.rplant.xyz", "port": 7122, "worker": "QRzykDTJxmmarFsExdyZKAxRKruefbzpM1", "password": "x", "workers": 2, "fee": 1 }
